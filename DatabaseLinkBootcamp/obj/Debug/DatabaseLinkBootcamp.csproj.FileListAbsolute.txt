@@ -1,0 +1,9 @@
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\obj\Debug\DatabaseLinkBootcamp.csprojAssemblyReference.cache
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\obj\Debug\DatabaseLinkBootcamp.Form1.resources
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\obj\Debug\DatabaseLinkBootcamp.Properties.Resources.resources
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\obj\Debug\DatabaseLinkBootcamp.csproj.GenerateResource.cache
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\bin\Debug\DatabaseLinkBootcamp.exe.config
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\bin\Debug\DatabaseLinkBootcamp.exe
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\bin\Debug\DatabaseLinkBootcamp.pdb
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\obj\Debug\DatabaseLinkBootcamp.exe
+C:\Users\Admin\AIE course\DataBase Fundamentals\code\DatabaseLinkBootcamp\DatabaseLinkBootcamp\obj\Debug\DatabaseLinkBootcamp.pdb
