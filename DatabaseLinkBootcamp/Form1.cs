@@ -13,6 +13,12 @@ namespace DatabaseLinkBootcamp
 {
     public partial class Form1 : Form
     {
+
+        //connection to database (connection string)
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-110CBOF\SQLEXPRESS;Initial Catalog=CrossCammpus1;Integrated Security=True");
+
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -20,41 +26,42 @@ namespace DatabaseLinkBootcamp
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
+
             try
             {
-                //connection to database (connection string)
-                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-110CBOF\SQLEXPRESS;Initial Catalog=CrossCammpus1;Integrated Security=True");
-
-                // Open connection
                 con.Open();
 
-                //Create a sql command & prep app for sql query 
-                SqlCommand cmd = con.CreateCommand();
+                var qeury = "Select * from LoginDetails where username = @username and userpassword =@password";
+                var command = new SqlCommand(qeury, con);
 
-                //Create the type of command
-                cmd.CommandType = CommandType.Text;
+                command.Parameters.AddWithValue("@username", txtName.Text);
+                command.Parameters.AddWithValue("@password", txtPass.Text);
 
-                //type out the query 
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
 
-                cmd.CommandText = "SELECT * FROM UpdateInfo";
+                da.Fill(dt);
 
-                DataTable d = new DataTable();
+                if (dt.Rows.Count == 1)
+                {
+                    DetailForm ifd = new DetailForm();
+                    ifd.Show();
+                    this.Hide();
 
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-                da.Fill(d);
-
-                dgvDisplay.DataSource = d;
-
-
-                //close connection
-                con.Close();
-                
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            finally
+            {
+                con.Close();
+            }
         }
-    }
+    }   
 }
