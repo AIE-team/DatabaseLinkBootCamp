@@ -29,7 +29,7 @@ namespace DatabaseLinkBootcamp
 
             try
             {
-                con.Open();
+                con.Open(); 
 
                 var qeury = "Select * from LoginDetails where username = @username and userpassword =@password";
                 var command = new SqlCommand(qeury, con);
