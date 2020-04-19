@@ -35,9 +35,9 @@
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(87, 148);
+            this.Login.Location = new System.Drawing.Point(12, 148);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(240, 23);
+            this.Login.Size = new System.Drawing.Size(560, 23);
             this.Login.TabIndex = 4;
             this.Login.Text = "Show Details";
             this.Login.UseVisualStyleBackColor = true;
@@ -50,14 +50,14 @@
             this.dgvDisplay.Name = "dgvDisplay";
             this.dgvDisplay.RowHeadersWidth = 51;
             this.dgvDisplay.RowTemplate.Height = 24;
-            this.dgvDisplay.Size = new System.Drawing.Size(396, 118);
+            this.dgvDisplay.Size = new System.Drawing.Size(560, 118);
             this.dgvDisplay.TabIndex = 5;
             // 
             // DetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 183);
+            this.ClientSize = new System.Drawing.Size(584, 183);
             this.Controls.Add(this.dgvDisplay);
             this.Controls.Add(this.Login);
             this.Name = "DetailForm";

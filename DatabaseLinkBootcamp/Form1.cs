@@ -13,11 +13,8 @@ namespace DatabaseLinkBootcamp
 {
     public partial class Form1 : Form
     {
-
         //connection to database (connection string)
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-110CBOF\SQLEXPRESS;Initial Catalog=CrossCammpus1;Integrated Security=True");
-
-
         
         public Form1()
         {
@@ -26,10 +23,9 @@ namespace DatabaseLinkBootcamp
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-
             try
             {
-                con.Open();
+                con.Open(); 
 
                 var qeury = "Select * from LoginDetails where username = @username and userpassword =@password";
                 var command = new SqlCommand(qeury, con);
@@ -47,7 +43,6 @@ namespace DatabaseLinkBootcamp
                     DetailForm ifd = new DetailForm();
                     ifd.Show();
                     this.Hide();
-
                 }
                 else
                 {
