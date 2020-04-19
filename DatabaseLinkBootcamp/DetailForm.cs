@@ -23,11 +23,8 @@ namespace DatabaseLinkBootcamp
 
         private void Login_Click(object sender, EventArgs e)
         {
-            
             try
             {
-               
-                
                 // Open connection
                 con.Open();
 
@@ -38,7 +35,6 @@ namespace DatabaseLinkBootcamp
                 cmd.CommandType = CommandType.Text;
 
                 //type out the query 
-
                 cmd.CommandText = "SELECT * FROM UpdateInfo";
 
                 DataTable d = new DataTable();
@@ -49,7 +45,6 @@ namespace DatabaseLinkBootcamp
 
                 dgvDisplay.DataSource = d;
 
-
                 //close connection
                 con.Close();
                 
@@ -57,8 +52,7 @@ namespace DatabaseLinkBootcamp
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
-            
+            }            
         }
     }
 }
